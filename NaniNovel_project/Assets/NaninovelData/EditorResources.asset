@@ -171,4 +171,54 @@ MonoBehaviour:
   - Id: Movies
     Resources: []
   - Id: Backgrounds/2b6d8777-b2b0-4fbe-88cb-68cd3bfb69bf
+    Resources:
+    - name: city
+      pathPrefix: Backgrounds/MainBackground
+      guid: 57574f812bd03394db7fff0f421f0d23
+    - name: garage
+      pathPrefix: Backgrounds/MainBackground
+      guid: 99982422817b43d4db2498970ad72064
+    - name: space
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7fe331cb089a0a3468b8d8d3b7b2b8f4
+  - Id: Characters/ff4d34af-8bb1-42ad-bc6e-fd4254ab8dd0
+    Resources:
+    - name: default
+      pathPrefix: Characters/Hi
+      guid: cc22af7bfae79604199146ce1a98b0fd
+    - name: angry
+      pathPrefix: Characters/Hi
+      guid: 65236601367bc194bbed9c92c1cede07
+    - name: lies
+      pathPrefix: Characters/Hi
+      guid: e7d204f7d21a7834b900c8614ab1840f
+    - name: surprised
+      pathPrefix: Characters/Hi
+      guid: 0132eca74c4d1ca4fb7fb7464ce3e471
+  - Id: Characters/44dca9ba-b0d9-4240-bb83-566492873b85
+    Resources:
+    - name: default
+      pathPrefix: Characters/She
+      guid: d537c98a3ce2ef84993dd3fd127f28ce
+    - name: happy
+      pathPrefix: Characters/She
+      guid: f3f50db3452da0c45b48fbc87c1ff6c5
+    - name: sad
+      pathPrefix: Characters/She
+      guid: 57f4707978722624e92003a52d04aa47
+    - name: surprised
+      pathPrefix: Characters/She
+      guid: 720f781b7983b1a4088ebf395bad7431
+  - Id: Characters/d268bacd-9c72-4da1-97ef-e56047042b69
+    Resources:
+    - name: default
+      pathPrefix: Characters/Shu
+      guid: 4d537eb80acead640a179509ed465eb9
+    - name: angry
+      pathPrefix: Characters/Shu
+      guid: d464dd392ca5efe47acf684763c5a2ef
+    - name: fear
+      pathPrefix: Characters/Shu
+      guid: de71617d2545b7b4abd96693b808501d
+  - Id: Audio
     Resources: []
