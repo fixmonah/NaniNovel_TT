@@ -166,6 +166,15 @@ MonoBehaviour:
     - name: ToastUI
       pathPrefix: UI
       guid: dd85ce99288c2f8488447fa511b1c0d6
+    - name: QuestLog
+      pathPrefix: UI
+      guid: e036b608bdb9849469bd790e72b6bf40
+    - name: MapButton
+      pathPrefix: UI
+      guid: d257c2e9ca4f49a46937a2936b4d8c32
+    - name: Map
+      pathPrefix: UI
+      guid: ba9d1858e1a8e554eac0dd81c4ea4705
   - Id: CharacterAvatars
     Resources: []
   - Id: Movies
@@ -181,6 +190,12 @@ MonoBehaviour:
     - name: space
       pathPrefix: Backgrounds/MainBackground
       guid: 7fe331cb089a0a3468b8d8d3b7b2b8f4
+    - name: intro
+      pathPrefix: Backgrounds/MainBackground
+      guid: 42c42b1cba0c8d546a4c2d06f5015c8a
+    - name: map
+      pathPrefix: Backgrounds/MainBackground
+      guid: 446589e664cd82542bb7cafb5c03343f
   - Id: Characters/ff4d34af-8bb1-42ad-bc6e-fd4254ab8dd0
     Resources:
     - name: default
@@ -222,3 +237,20 @@ MonoBehaviour:
       guid: de71617d2545b7b4abd96693b808501d
   - Id: Audio
     Resources: []
+  - Id: Scripts
+    Resources:
+    - name: Start
+      pathPrefix: Scripts
+      guid: ecd2382016e2b9946a6bce83bf533d20
+    - name: LocationGarage
+      pathPrefix: Scripts
+      guid: 4574cb6bdadfe6f45ae8ebb931e526e6
+    - name: Map
+      pathPrefix: Scripts
+      guid: b79aa07d758f4134f8636517a5035d27
+    - name: LocationCity
+      pathPrefix: Scripts
+      guid: 0b8fe1a7dcdcf5d4faa29ad890c9358a
+    - name: LocationSpace
+      pathPrefix: Scripts
+      guid: 9e356fb6f4025a545bee1d2256c844c9

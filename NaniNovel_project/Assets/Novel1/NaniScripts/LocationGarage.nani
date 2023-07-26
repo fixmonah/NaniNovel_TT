@@ -1,0 +1,28 @@
+@back garage
+; quest 0
+@if questState=0
+    @char She.default pos:90,0
+    @char Hi.default pos:10,0 scale:1,1
+    @save
+    @char Hi.default pos:10,0 scale:1.1,1.1
+    @print author:Hi "Привет {userName}. Меня зовут Hi. Мне нужна моя книга."
+    @print author:Hi "Эту книгу я дал Shu. Разыщи ее в городе и попроси вернуть мне книгу."
+    @char Hi.default pos:10,0 scale:1,1
+    @char She.default pos:90,0 scale:1.1,1.1
+    @print author:{userName} "Хорошо Hi. Я разыщу Shu и попрошу её вернуть твою книгу"
+    @set questLogText="Найти Shu"
+    @showUI QuestLog 
+    @char She.surprised pos:90,0 scale:1.1,1.1
+    @print author:{userName} "А где мне искать Shu?"
+    @char She.surprised pos:90,0 scale:1,1
+    @char Hi.default pos:10,0 scale:1.1,1.1
+    @print author:Hi "Она сейчас в городе. Ты сможешь туда попасть используя карту."
+    @print author:Hi "Нажми на кнопку "карта" в правом углу экрана, и выбери "город""
+    @set questState=1
+    @showUI MapButton
+@elseif questState>0&&questState<3
+    @showUI QuestLog,MapButton
+    @char Hi.default pos:10,0 scale:1,1
+    @print author:Hi "Я жду тебя с книгой"
+@endif
+@stop
