@@ -1,4 +1,4 @@
-@hideUI QuestLog,MapButton
+@hideUI MapButton
 @hideAll
 @back map
 @showUI Map

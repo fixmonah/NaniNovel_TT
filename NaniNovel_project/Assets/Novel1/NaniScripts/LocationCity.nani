@@ -1,2 +1,16 @@
-
+@back city
+@showUI QuestLog,MapButton
+@if questState>=1&&questState<3
+    @char She.default pos:90,0 scale:1,1
+    @char Shu.default pos:10,0 scale:1,1
+    @save
+    @char She.default pos:90,0 scale:1.1,1.1
+    @print author:{userName} "Привет Shu. Меня к тебе отправил Hi."
+    @print author:{userName} "Он просит вернуть ему книгу"
+    @char She.default pos:90,0 scale:1,1
+    @char Shu.default pos:10,0 scale:1.1,1.1
+    @print author:Shu "Да. Я брала у него книгу. Сейчас она в моем домике за городом"
+    @print author:Shu "Но перед тем, как туда попасть, ты поможешь мне с головоломкой"
+@elseif questState>3
+@endif
 @stop

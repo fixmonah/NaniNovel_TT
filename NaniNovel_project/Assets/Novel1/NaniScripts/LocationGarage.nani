@@ -19,6 +19,7 @@
     @print author:Hi "Она сейчас в городе. Ты сможешь туда попасть используя карту."
     @print author:Hi "Нажми на кнопку "карта" в правом углу экрана, и выбери "город""
     @set questState=1
+    @set location2_ContainQuest=true
     @showUI MapButton
 @elseif questState>0&&questState<3
     @showUI QuestLog,MapButton
