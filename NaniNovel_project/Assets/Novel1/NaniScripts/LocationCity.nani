@@ -1,6 +1,6 @@
 @back city
 @showUI QuestLog,MapButton
-@if questState>=1&&questState<3
+@if questState==1
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1,1
     @save
@@ -11,6 +11,17 @@
     @char Shu.default pos:10,0 scale:1.1,1.1
     @print author:Shu "Да. Я брала у него книгу. Сейчас она в моем домике за городом"
     @print author:Shu "Но перед тем, как туда попасть, ты поможешь мне с головоломкой"
-@elseif questState>3
+    @set questLogText="Поиграй в игру на карте Город"
+    @set questState=2
+    @showUI UIMiniGame
+@elseif questState==2
+    @char She.default pos:90,0 scale:1,1
+    @char Shu.default pos:10,0 scale:1.1,1.1
+    @print author:Shu "Поиграй в игру"
+    @showUI UIMiniGame
+@elseif questState==3
+    @char She.default pos:90,0 scale:1,1
+    @char Shu.default pos:10,0 scale:1.1,1.1
+    @print author:Shu "Очень хорошо. Теперь ты можешь пойти в Пустырь и забрать книгу"
 @endif
 @stop

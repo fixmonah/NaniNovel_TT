@@ -1,4 +1,4 @@
-@hideUI MapButton
+@hideUI MapButton,UIMiniGame
 @hideAll
 @back map
 @showUI Map
