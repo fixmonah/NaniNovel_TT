@@ -245,12 +245,12 @@ MonoBehaviour:
     - name: Start
       pathPrefix: Scripts
       guid: ecd2382016e2b9946a6bce83bf533d20
-    - name: LocationGarage
-      pathPrefix: Scripts
-      guid: 4574cb6bdadfe6f45ae8ebb931e526e6
     - name: Map
       pathPrefix: Scripts
       guid: b79aa07d758f4134f8636517a5035d27
+    - name: LocationGarage
+      pathPrefix: Scripts
+      guid: 4574cb6bdadfe6f45ae8ebb931e526e6
     - name: LocationCity
       pathPrefix: Scripts
       guid: 0b8fe1a7dcdcf5d4faa29ad890c9358a

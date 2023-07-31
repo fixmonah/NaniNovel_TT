@@ -14,14 +14,25 @@
     @set questLogText="Поиграй в игру на карте Город"
     @set questState=2
     @showUI UIMiniGame
-@elseif questState==2
+    @gosub .PlayMiniGameLoop
+@endif
+@gosub .PlayMiniGameLoop
+@stop
+
+# PlayMiniGameLoop
+@if questState==2
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
     @print author:Shu "Поиграй в игру"
     @showUI UIMiniGame
+    @gosub .PlayMiniGameLoop
 @elseif questState==3
+    @hideUI UIMiniGame
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
     @print author:Shu "Очень хорошо. Теперь ты можешь пойти в Пустырь и забрать книгу"
 @endif
-@stop
+
+
+
+@return
