@@ -2,6 +2,7 @@
 @set userName=""
 @set questLogText=""
 @set questState=0
+@set getItem=false
 ; Map Data
 @set location1_Name="Гараж"
 @set location1_Avaliable=true

@@ -10,15 +10,10 @@ using UnityEngine.SceneManagement;
 public class MiniGameServices : IEngineService
 {
     private readonly CustomVariableManager customVariableManager;
-    private readonly ScriptManager scriptManager;
 
-    public MiniGameServices(
-        CustomVariableManager customVariableManager,
-        ScriptManager scriptManager
-        )
+    public MiniGameServices(CustomVariableManager customVariableManager)
     {
         this.customVariableManager = customVariableManager;
-        this.scriptManager = scriptManager;
     }
 
     public UniTask InitializeServiceAsync()
@@ -26,14 +21,8 @@ public class MiniGameServices : IEngineService
         return UniTask.CompletedTask;
     }
 
-    public void DestroyService()
-    {
-
-    }
-    public void ResetService()
-    {
-        
-    }
+    public void DestroyService() { }
+    public void ResetService() { }
 
     public async UniTask OpenMiniGame()
     {
@@ -45,7 +34,7 @@ public class MiniGameServices : IEngineService
     public async UniTask CloseMiniGame()
     {
         await SceneManager.LoadSceneAsync("NovelScene");
-        //await scriptManager.LoadScriptAsync("Map");
+        //Debug.Log("CloseMiniGame Services");
         return;
     }
 }

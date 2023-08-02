@@ -1873,6 +1873,6 @@ MonoBehaviour:
   scriptName: 
   scriptText: '@hideUI Map
 
-    @goto LocationSpace'
+    @goto LocationWasteland'
   playOnAwake: 0
   disableWaitInput: 0

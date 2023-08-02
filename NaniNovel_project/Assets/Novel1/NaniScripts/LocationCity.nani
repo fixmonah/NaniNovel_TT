@@ -23,16 +23,23 @@
 @if questState==2
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
-    @print author:Shu "Поиграй в игру"
     @showUI UIMiniGame
+    @print author:Shu "Поиграй в игру"
     @gosub .PlayMiniGameLoop
 @elseif questState==3
     @hideUI UIMiniGame
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
     @print author:Shu "Очень хорошо. Теперь ты можешь пойти в Пустырь и забрать книгу"
+    @print author:Shu "Зайди на карту и выбери пустырь"
+    @set location2_ContainQuest=false
+    @set location3_Avaliable=true
+    @set location3_ContainQuest=true
+    @set questState=4
+    @set questLogText="Забрать книгу на пустыре"
+@elseif questState==4
+    @char She.default pos:90,0 scale:1,1
+    @char Shu.default pos:10,0 scale:1.1,1.1
+    @print author:Shu "Забери книгу на пустыре"
 @endif
-
-
-
 @return

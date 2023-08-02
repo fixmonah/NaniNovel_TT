@@ -16,5 +16,6 @@ public class MiniGameReturnButton : MonoBehaviour
     public void CloseMiniGame()
     {
         UniTask gameOverTask = miniGameServices.CloseMiniGame();
+        //Debug.Log("CloseMiniGame Button");
     }
 }

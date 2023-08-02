@@ -297,6 +297,10 @@
         &lt;Type&gt;UI&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
+        &lt;Path&gt;UIStumpAndBook&lt;/Path&gt;
+        &lt;Type&gt;UI&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
         &lt;Path&gt;city&lt;/Path&gt;
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
@@ -377,7 +381,7 @@
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;LocationSpace&lt;/Path&gt;
+        &lt;Path&gt;LocationWasteland&lt;/Path&gt;
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
     &lt;/Resources&gt;
@@ -401,8 +405,10 @@
         &lt;/Values&gt;
       &lt;/Constant&gt;
       &lt;Constant&gt;
-        &lt;Name&gt;Labels/LocationSpace&lt;/Name&gt;
-        &lt;Values /&gt;
+        &lt;Name&gt;Labels/LocationWasteland&lt;/Name&gt;
+        &lt;Values&gt;
+          &lt;string&gt;GetItem&lt;/string&gt;
+        &lt;/Values&gt;
       &lt;/Constant&gt;
     &lt;/Constants&gt;
     &lt;Variables /&gt;
