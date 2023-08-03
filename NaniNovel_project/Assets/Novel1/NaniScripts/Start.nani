@@ -3,6 +3,8 @@
 @set questLogText=""
 @set questState=0
 @set getItem=false
+; 0 = none, 1 = NPC1, 2 = NPC2, 3 = to keep for yourself
+@set returnItem=0
 ; Map Data
 @set location1_Name="Гараж"
 @set location1_Avaliable=true

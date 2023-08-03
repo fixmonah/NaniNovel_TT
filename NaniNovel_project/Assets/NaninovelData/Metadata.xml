@@ -396,7 +396,9 @@
       &lt;/Constant&gt;
       &lt;Constant&gt;
         &lt;Name&gt;Labels/LocationGarage&lt;/Name&gt;
-        &lt;Values /&gt;
+        &lt;Values&gt;
+          &lt;string&gt;WaitChoise&lt;/string&gt;
+        &lt;/Values&gt;
       &lt;/Constant&gt;
       &lt;Constant&gt;
         &lt;Name&gt;Labels/LocationCity&lt;/Name&gt;

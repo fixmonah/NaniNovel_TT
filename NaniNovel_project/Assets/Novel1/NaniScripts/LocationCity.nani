@@ -7,9 +7,10 @@
     @char She.default pos:90,0 scale:1.1,1.1
     @print author:{userName} "Привет Shu. Меня к тебе отправил Hi."
     @print author:{userName} "Он просит вернуть ему книгу"
+    @hideUI MapButton
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
-    @print author:Shu "Да. Я брала у него книгу. Сейчас она в моем домике за городом"
+    @print author:Shu "Да. Я брала у него книгу. Сейчас она за городом"
     @print author:Shu "Но перед тем, как туда попасть, ты поможешь мне с головоломкой"
     @set questLogText="Поиграй в игру на карте Город"
     @set questState=2
@@ -26,6 +27,7 @@
     @showUI UIMiniGame
     @print author:Shu "Поиграй в игру"
     @gosub .PlayMiniGameLoop
+
 @elseif questState==3
     @hideUI UIMiniGame
     @char She.default pos:90,0 scale:1,1
@@ -37,9 +39,35 @@
     @set location3_ContainQuest=true
     @set questState=4
     @set questLogText="Забрать книгу на пустыре"
+    @showUI MapButton
+
 @elseif questState==4
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
     @print author:Shu "Забери книгу на пустыре"
+
+@elseif questState==5
+    @char She.default pos:90,0 scale:1,1
+    @char She.default pos:90,0 scale:1.1,1.1
+    @print author:{userName} "Shu здесь нет. Наверное, она вместе с Hi."
+    @set questLogText="Встретиться с Hi в гараже"
+    @set location3_Avaliable=false
+    @set location3_ContainQuest=false
+    @set location2_ContainQuest=false
+    @set location1_ContainQuest=true
+    
+@elseif questState==6
+    @showUI MapButton
+    @hideUI QuestLog
+    @char She.default pos:90,0 scale:1,1
+    @if returnItem==2
+        @char Shu.default pos:10,0 scale:1.1,1.1
+        @print author:Shu "Спасибо {userName}. За книгу."
+        @char Shu.default pos:10,0 scale:1,1
+    @else
+        @char Shu.angry pos:10,0 scale:1.1,1.1
+        @print author:Shu "Это возмутительно!"
+        @char Shu.angry pos:10,0 scale:1,1
+    @endIf
 @endif
 @return
