@@ -5,14 +5,14 @@
     @char Shu.default pos:10,0 scale:1,1
     @save
     @char She.default pos:90,0 scale:1.1,1.1
-    @print author:{userName} "Привет Shu. Меня к тебе отправил Hi."
-    @print author:{userName} "Он просит вернуть ему книгу"
+    @print author:{userName} "Hey Shu. Hi sent me to you."
+    @print author:{userName} "He asks for the book to be returned to him."
     @hideUI MapButton
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
-    @print author:Shu "Да. Я брала у него книгу. Сейчас она за городом"
-    @print author:Shu "Но перед тем, как туда попасть, ты поможешь мне с головоломкой"
-    @set questLogText="Поиграй в игру на карте Город"
+    @print author:Shu "Yes. I borrowed a book from him. Now she's out of town."
+    @print author:Shu "But before you get there, you help me with the puzzle."
+    @set questLogText="Play a game on the City map."
     @set questState=2
     @showUI UIMiniGame
     @gosub .PlayMiniGameLoop
@@ -25,32 +25,32 @@
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
     @showUI UIMiniGame
-    @print author:Shu "Поиграй в игру"
+    @print author:Shu "Play the game."
     @gosub .PlayMiniGameLoop
 
 @elseif questState==3
     @hideUI UIMiniGame
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
-    @print author:Shu "Очень хорошо. Теперь ты можешь пойти в Пустырь и забрать книгу"
-    @print author:Shu "Зайди на карту и выбери пустырь"
+    @print author:Shu "Very good. Now you can go to Wasteland and pick up the book."
+    @print author:Shu "Go to the map and choose a wasteland."
     @set location2_ContainQuest=false
     @set location3_Avaliable=true
     @set location3_ContainQuest=true
     @set questState=4
-    @set questLogText="Забрать книгу на пустыре"
+    @set questLogText="Pick up a book in the wasteland."
     @showUI MapButton
 
 @elseif questState==4
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
-    @print author:Shu "Забери книгу на пустыре"
+    @print author:Shu "Pick up a book in the wasteland."
 
 @elseif questState==5
     @char She.default pos:90,0 scale:1,1
     @char She.default pos:90,0 scale:1.1,1.1
-    @print author:{userName} "Shu здесь нет. Наверное, она вместе с Hi."
-    @set questLogText="Встретиться с Hi в гараже"
+    @print author:{userName} "Shu is not here. She's probably with Hi."
+    @set questLogText="Meet Hi in the garage."
     @set location3_Avaliable=false
     @set location3_ContainQuest=false
     @set location2_ContainQuest=false
@@ -62,11 +62,11 @@
     @char She.default pos:90,0 scale:1,1
     @if returnItem==2
         @char Shu.default pos:10,0 scale:1.1,1.1
-        @print author:Shu "Спасибо {userName}. За книгу."
+        @print author:Shu "{userName}. Thank you. For a book."
         @char Shu.default pos:10,0 scale:1,1
     @else
         @char Shu.angry pos:10,0 scale:1.1,1.1
-        @print author:Shu "Это возмутительно!"
+        @print author:Shu "It's outrageous!"
         @char Shu.angry pos:10,0 scale:1,1
     @endIf
 @endif

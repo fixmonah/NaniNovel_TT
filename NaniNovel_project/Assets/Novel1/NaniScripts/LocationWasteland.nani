@@ -1,7 +1,7 @@
 @back space
 @showUI UIStumpAndBook,MapButton
 @char She.default pos:90,0 scale:1
-@print author:{userName} "А вот и книга. Надо ее взять"
+@print author:{userName} "And here is the book. Gotta take her."
 @gosub .GetItem
 @stop
 
@@ -13,10 +13,10 @@
     @set location2_ContainQuest=true
     @hideUI UIStumpAndBook
     @char She.default pos:90,0 scale:1
-    @set questLogText="Вернуться в город к Shu"
-    @print author:{userName} "Теперь надо вернуться к Shu"
+    @set questLogText="Back in town to Shu"
+    @print author:{userName} "Now we have to go back to Shu"
 @else
-    @print author:{userName} "Надо взять книгу"
+    @print author:{userName} "Gotta get a book"
     @gosub .GetItem
 @endIf
 @return

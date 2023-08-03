@@ -4,19 +4,19 @@
     @char Hi.default pos:10,0 scale:1,1
     @save
     @char Hi.default pos:10,0 scale:1.1,1.1
-    @print author:Hi "Привет {userName}. Меня зовут Hi. Мне нужна моя книга."
-    @print author:Hi "Эту книгу я дал Shu. Разыщи ее в городе и попроси вернуть мне книгу."
+    @print author:Hi "{userName} Hello. My name is Hi. I need my book."
+    @print author:Hi "I gave this book to Shu. Find her in the city and ask her to return the book to me."
     @char Hi.default pos:10,0 scale:1,1
     @char She.default pos:90,0 scale:1.1,1.1
-    @print author:{userName} "Хорошо Hi. Я разыщу Shu и попрошу её вернуть твою книгу"
-    @set questLogText="Найти Shu"
+    @print author:{userName} "Okay Hi. I will look for Shu and ask her to return your book."
+    @set questLogText="Find Shu."
     @showUI QuestLog 
     @char She.surprised pos:90,0 scale:1.1,1.1
-    @print author:{userName} "А где мне искать Shu?"
+    @print author:{userName} "Where can I find Shu?"
     @char She.surprised pos:90,0 scale:1,1
     @char Hi.default pos:10,0 scale:1.1,1.1
-    @print author:Hi "Она сейчас в городе. Ты сможешь туда попасть используя карту."
-    @print author:Hi "Нажми на кнопку "карта" в правом углу экрана, и выбери "город""
+    @print author:Hi "She is in the city now. You can get there using the map."
+    @print author:Hi "Click on the "map" button in the right corner of the screen, and select "city""
     @set questState=1
     @set location2_ContainQuest=true
     @showUI MapButton
@@ -24,7 +24,7 @@
 @elseif questState>0&&questState<5
     @showUI QuestLog,MapButton
     @char Hi.default pos:10,0 scale:1,1
-    @print author:Hi "Я жду тебя с книгой"
+    @print author:Hi "I am waiting for you with a book."
 
 @elseif questState==5
     @showUI QuestLog
@@ -33,41 +33,41 @@
     @char Shu.default pos:90,0 scale:1,1
     @char She.default pos:50,0 scale:1,1
     @char Hi.default pos:10,0 scale:1.1,1.1
-    @print author:Hi "Привет {userName}. Ты принесла мне книгу?"
+    @print author:Hi "{userName} Hello. Did you bring me a book?"
     @char Hi.default pos:10,0 scale:1,1
     @char Shu.default pos:90,0 scale:1.1,1.1
-    @print author:Shu "Подожди. Я ее не дочитала."
+    @print author:Shu "Wait. I didn't read it."
     @char Shu.default pos:90,0 scale:1,1
     @char She.default pos:50,0 scale:1.1,1.1
-    @print author:{userName} "Вот так ситуация... Что же делать?"
+    @print author:{userName} "That's the situation... What to do?"
     @char She.default pos:50,0 scale:1,1
-    @set questLogText="Выбрать, кому отдать книгу"
-    @choice "Отдать книгу Hi" set:returnItem=1
-    @choice "Отдать книгу Shu" set:returnItem=2
-    @choice "Оставить ее себе" set:returnItem=3
+    @set questLogText="Choose who to give the book to"
+    @choice "Give book Hi" set:returnItem=1
+    @choice "Give the book to Shu" set:returnItem=2
+    @choice "Keep the book" set:returnItem=3
     
     @gosub .WaitChoise
     @if returnItem==1
         @char Hi.default pos:10,0 scale:1.1,1.1
-        @print author:Hi "Спасибо {userName}. Ты принесла мне книгу."
+        @print author:Hi "{userName} Thank you. You brought me a book."
         @char Hi.default pos:10,0 scale:1,1
     @else
         @char Hi.angry pos:10,0 scale:1.1,1.1
-        @print author:Hi "{userName}. Это возмутительно!"
+        @print author:Hi "{userName}. It's outrageous!"
         @char Hi.angry pos:10,0 scale:1,1
     @endIf
     @if returnItem==2
         @char Shu.default pos:90,0 scale:1.1,1.1
-        @print author:Shu "Спасибо {userName}. Ты принесла мне книгу."
+        @print author:Shu "{userName} Thank you. You brought me a book."
         @char Shu.default pos:90,0 scale:1,1
     @else
         @char Shu.angry pos:90,0 scale:1.1,1.1
-        @print author:Shu "{userName}. Это возмутительно!"
+        @print author:Shu "{userName}. It's outrageous!"
         @char Shu.angry pos:90,0 scale:1,1
     @endIf
     @if returnItem==3
         @char She.happy pos:50,0 scale:1.1,1.1
-        @print author:{userName} "Интересно, что в книге..."
+        @print author:{userName} "It's interesting that in the book..."
         @char She.happy pos:50,0 scale:1,1
     @endIf
     @set questState=6
@@ -82,11 +82,11 @@
     @char She.default pos:90,0 scale:1,1
     @if returnItem==1
         @char Hi.default pos:10,0 scale:1.1,1.1
-        @print author:Hi "Спасибо {userName}. За книгу."
+        @print author:Hi "{userName} Thank you. For a book."
         @char Hi.default pos:10,0 scale:1,1
     @else
         @char Hi.angry pos:10,0 scale:1.1,1.1
-        @print author:Hi "Это возмутительно!"
+        @print author:Hi "It's outrageous!"
         @char Hi.angry pos:10,0 scale:1,1
     @endIf
 @endif
@@ -95,7 +95,7 @@
 
 # WaitChoise
 @if returnItem==0
-@print author:{userName} "Что же делать?"
+@print author:{userName} "What to do?"
 @gosub .WaitChoise
 @endif
 @return
