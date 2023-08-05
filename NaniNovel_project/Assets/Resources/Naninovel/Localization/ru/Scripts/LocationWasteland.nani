@@ -1,0 +1,13 @@
+; English <en> to Russian <ru> localization document for `LocationWasteland` naninovel script
+
+# 1f1f77a3
+; @print author:{userName} "And here is the book. Gotta take her."
+@print author:{userName} "А вот и книга. Нада ее взять."
+
+# bdb745e4
+; @print author:{userName} "Now we have to go back to Shu"
+@print author:{userName} "Теперь можна вернуться к Шу."
+
+# e69adfc2
+; @print author:{userName} "Gotta get a book"
+@print author:{userName} "Взять книгу."

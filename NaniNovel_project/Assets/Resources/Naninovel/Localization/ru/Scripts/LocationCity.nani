@@ -1,0 +1,45 @@
+; English <en> to Russian <ru> localization document for `LocationCity` naninovel script
+
+# 25b8e9ee
+; @print author:{userName} "Hey Shu. Hi sent me to you."
+@print author:{userName} "Привет Шу. Хи послал меня к тебе."
+
+# ca605dff
+; @print author:{userName} "He asks for the book to be returned to him."
+@print author:{userName} "Хи просит вернуть книгу, которую он тебе дал."
+
+# 1a80c985
+; @print author:Shu "Yes. I borrowed a book from him. Now she's out of town."
+@print author:Shu "Да. Я брала у него книгу. Она сейчас за городом"
+
+# 13d4b28a
+; @print author:Shu "But before you get there, you help me with the puzzle."
+@print author:Shu "Но прежде, чем ты туда доберешься, помоги мне с загадкой."
+
+# a09688bc
+; @print author:Shu "Play the game."
+@print author:Shu "Поиграй в игру."
+
+# eadf2fe6
+; @print author:Shu "Very good. Now you can go to Wasteland and pick up the book."
+@print author:Shu "Очень хорошо. Теперь ты можешь забрать книгу на пустыре."
+
+# 5dd285de
+; @print author:Shu "Go to the map and choose a wasteland."
+@print author:Shu "Перейди на карту и выбери Пустырь"
+
+# 21b6063b
+; @print author:Shu "Pick up a book in the wasteland."
+@print author:Shu "Забрать книгу на пустыре."
+
+# bc49041b
+; @print author:{userName} "Shu is not here. She's probably with Hi."
+@print author:{userName} "Шу здесь нет. Возможна она с Хи."
+
+# be61570f
+; @print author:Shu "{userName}. Thank you. For a book."
+@print author:Shu "{userName}. Спасибо за книгу"
+
+# c0fc1275
+; @print author:Shu "It's outrageous!"
+@print author:Shu "Это возмутительно!"

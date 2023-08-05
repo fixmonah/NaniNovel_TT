@@ -1,0 +1,17 @@
+; English <en> to Russian <ru> localization document for `Start` naninovel script
+
+# d514c4f0
+; Hello. This is where our little story begins.
+Привет. Здесь начинается наша маленькая история.
+
+# 3c191bfb
+; How would you like to call me?
+Как бы вы хотели называть меня?
+
+# b77c2dee
+; @input userName summary:"Enter a name."
+@input userName summary:"Введите имя."
+
+# ea3802dc
+; @print author:{userName} "Great. Adventure begins."
+@print author:{userName} "Отлично. Приключение начинается."

@@ -1,0 +1,85 @@
+; English <en> to Russian <ru> localization document for `LocationGarage` naninovel script
+
+# 2b32f0f3
+; @print author:Hi "{userName} Hello. My name is Hi. I need my book."
+@print author:Hi "{userName} Привет. Меня зовут Хи. Мне нужна моя книга."
+
+# 5c85663
+; @print author:Hi "I gave this book to Shu. Find her in the city and ask her to return the book to me."
+@print author:Hi "Я дал эту книгу Шу. Найди ее в городе и попроси вернуть книгу."
+
+# c087874b
+; @print author:{userName} "Okay Hi. I will look for Shu and ask her to return your book."
+@print author:{userName} "Хорошо Хи. Я встречусть с Шу и попрошу ее вернуть книгу."
+
+# ec7631ab
+; @print author:{userName} "Where can I find Shu?"
+@print author:{userName} "Как мне найти Шу?"
+
+# 2dd17e4a
+; @print author:Hi "She is in the city now. You can get there using the map."
+@print author:Hi "Шу сейчас в городе. Ты можешь попасть туда через карту."
+
+# f9a93812
+; @print author:Hi "Click on the "map" button in the right corner of the screen, and select "city""
+@print author:Hi "Нажми на кнопку "карта" в правом верхнем углу экрана, и выбери "город"."
+
+# 7c6c865f
+; @print author:Hi "I am waiting for you with a book."
+@print author:Hi "Я буду ждать тебя тут, вместе с книгой."
+
+# ec25790
+; @print author:Hi "{userName} Hello. Did you bring me a book?"
+@print author:Hi "{userName} Привет. Ты принесла книгу?"
+
+# 1b827a11
+; @print author:Shu "Wait. I didn't read it."
+@print author:Shu "Подожди. Я её еще не дочитала."
+
+# e735f8e7
+; @print author:{userName} "That's the situation... What to do?"
+@print author:{userName} "Вот так ситуация... Что-же делать?"
+
+# c91fd8f5
+; @choice "Give book Hi" set:returnItem=1
+@choice "Отдать книгу Хи" set:returnItem=1
+
+# 908e92ce
+; @choice "Give the book to Shu" set:returnItem=2
+@choice "Отдать книгу Шу" set:returnItem=2
+
+# 613fbe49
+; @choice "Keep the book" set:returnItem=3
+@choice "Оставить книгу себе" set:returnItem=3
+
+# 3746a7c
+; @print author:Hi "{userName} Thank you. You brought me a book."
+@print author:Hi "{userName} Спасибо. Ты принесла мне книгу."
+
+# 22d75159
+; @print author:Hi "{userName}. It's outrageous!"
+@print author:Hi "{userName}. Это возмутительно!"
+
+# 81ec8df4
+; @print author:Shu "{userName} Thank you. You brought me a book."
+@print author:Shu "{userName} Спасибо. Ты принесла мне книгу."
+
+# 8db11666
+; @print author:Shu "{userName}. It's outrageous!"
+@print author:Shu "{userName}. Это возмутительно!"
+
+# 78479b2e
+; @print author:{userName} "It's interesting that in the book..."
+@print author:{userName} "Интересно, о чем книга..."
+
+# 3327ae72
+; @print author:Hi "{userName} Thank you. For a book."
+ @print author:Hi "{userName} Спасибо за книгу."
+
+# 98a593fa
+; @print author:Hi "It's outrageous!"
+@print author:Hi "Это возмутительно!"
+
+# c0d05f70
+; @print author:{userName} "What to do?"
+@print author:{userName} "Что делать?"
