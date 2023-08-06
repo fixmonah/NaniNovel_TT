@@ -1,4 +1,6 @@
 @back space
+@stopBgm
+@bgm WastelandMusic
 @showUI UIStumpAndBook,MapButton
 @char She.default pos:90,0 scale:1
 @print author:{userName} "And here is the book. Gotta take her."

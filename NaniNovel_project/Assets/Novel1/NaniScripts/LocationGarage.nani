@@ -1,4 +1,6 @@
 @back garage
+@stopBgm
+@bgm GarageMusic
 @if questState=0
     @char She.default pos:90,0
     @char Hi.default pos:10,0 scale:1,1
