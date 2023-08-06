@@ -6,15 +6,12 @@
 ; 0 = none, 1 = NPC1, 2 = NPC2, 3 = to keep for yourself
 @set returnItem=0
 ; Map Data
-@set location1_Name="Garage"
 @set location1_Avaliable=true
 @set location1_ContainQuest=false
 
-@set location2_Name="City"
 @set location2_Avaliable=true
 @set location2_ContainQuest=false
 
-@set location3_Name="Wasteland"
 @set location3_Avaliable=false
 @set location3_ContainQuest=false
 ;//----------------//

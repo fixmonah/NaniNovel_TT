@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6886052614082502723}
   - component: {fileID: 7892449387220705995}
   - component: {fileID: 2766492503306031124}
-  - component: {fileID: 5501968775899356583}
+  - component: {fileID: 6580806003468286466}
   - component: {fileID: 274035877165506172}
   m_Layer: 5
   m_Name: Map2
@@ -213,7 +213,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5501968775899356583
+--- !u!114 &6580806003468286466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,11 +222,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 607205289569304129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccf90b9270badd4981903249a04c3f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 18a93ec42ebe3044abd36de19cc3a880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customVariableName: location2_Name
-  onVariableValueChanged:
+  category: CustomUI
+  key: t_location2Name
+  defaultValue: City
+  onValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2929921219235334456}
@@ -241,15 +243,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onFloatVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onIntVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onBoolVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &274035877165506172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,8 +1346,8 @@ GameObject:
   - component: {fileID: 7862847063131572638}
   - component: {fileID: 7406941614150551938}
   - component: {fileID: 5774237639157516043}
-  - component: {fileID: 4594731726927741941}
   - component: {fileID: 8282507316333899799}
+  - component: {fileID: 3970807930618521250}
   - component: {fileID: 8924713532064980031}
   m_Layer: 5
   m_Name: Map1
@@ -1516,43 +1509,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4594731726927741941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8039812947875733243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccf90b9270badd4981903249a04c3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customVariableName: location1_Name
-  onVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8178590814926019854}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onFloatVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onIntVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onBoolVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &8282507316333899799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,6 +1537,36 @@ MonoBehaviour:
       - m_Target: {fileID: 1554132436693458493}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3970807930618521250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8039812947875733243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a93ec42ebe3044abd36de19cc3a880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: CustomUI
+  key: t_location1Name
+  defaultValue: Garage
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8178590814926019854}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1621,8 +1607,8 @@ GameObject:
   - component: {fileID: 1658293624111540704}
   - component: {fileID: 506490063630222921}
   - component: {fileID: 645201108547315626}
-  - component: {fileID: 8525661297369416681}
   - component: {fileID: 7645563819525865352}
+  - component: {fileID: 7074876147675615118}
   - component: {fileID: 451027393284886741}
   m_Layer: 5
   m_Name: Map3
@@ -1784,43 +1770,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8525661297369416681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9132792480594147459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccf90b9270badd4981903249a04c3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customVariableName: location3_Name
-  onVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7278803834614674799}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onFloatVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onIntVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onBoolVariableValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &7645563819525865352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1849,6 +1798,36 @@ MonoBehaviour:
       - m_Target: {fileID: 4957752210393866917}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7074876147675615118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9132792480594147459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a93ec42ebe3044abd36de19cc3a880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: CustomUI
+  key: t_location3Name
+  defaultValue: Wasteland
+  onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7278803834614674799}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

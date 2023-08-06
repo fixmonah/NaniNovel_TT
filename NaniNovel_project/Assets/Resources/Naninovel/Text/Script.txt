@@ -1,0 +1,6 @@
+t_questLog1: Find Shu.
+t_questLog2: Choose who to give the book
+t_questLog3: Play a game on the City map.
+t_questLog4: Pick up a book in the wasteland.
+t_questLog5: Meet Hi in the garage.
+t_questLog6: Back in town to Shu.

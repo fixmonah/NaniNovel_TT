@@ -13,7 +13,7 @@
     @set location2_ContainQuest=true
     @hideUI UIStumpAndBook
     @char She.default pos:90,0 scale:1
-    @set questLogText="Back in town to Shu"
+    @set questLogText=t_questLog6
     @print author:{userName} "Now we have to go back to Shu"
 @else
     @print author:{userName} "Gotta get a book"

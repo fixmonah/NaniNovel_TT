@@ -1,0 +1,6 @@
+t_location1Name: Garage
+t_location2Name: City
+t_location3Name: Wasteland
+t_mapButtonText: Map
+t_playMiniGameButtonText: Play Game
+t_returnFromMiniGameButtonText: Return to novel

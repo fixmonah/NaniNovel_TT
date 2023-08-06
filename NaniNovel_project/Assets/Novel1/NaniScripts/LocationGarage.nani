@@ -9,7 +9,7 @@
     @char Hi.default pos:10,0 scale:1,1
     @char She.default pos:90,0 scale:1.1,1.1
     @print author:{userName} "Okay Hi. I will look for Shu and ask her to return your book."
-    @set questLogText="Find Shu."
+    @set questLogText=t_questLog1
     @showUI QuestLog 
     @char She.surprised pos:90,0 scale:1.1,1.1
     @print author:{userName} "Where can I find Shu?"
@@ -41,7 +41,7 @@
     @char She.default pos:50,0 scale:1.1,1.1
     @print author:{userName} "That's the situation... What to do?"
     @char She.default pos:50,0 scale:1,1
-    @set questLogText="Choose who to give the book to"
+    @set questLogText=t_questLog2
     @choice "Give book Hi" set:returnItem=1
     @choice "Give the book to Shu" set:returnItem=2
     @choice "Keep the book" set:returnItem=3
