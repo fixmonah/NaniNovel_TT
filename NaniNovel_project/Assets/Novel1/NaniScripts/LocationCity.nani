@@ -44,7 +44,7 @@
 @elseif questState==4
     @char She.default pos:90,0 scale:1,1
     @char Shu.default pos:10,0 scale:1.1,1.1
-    @print author:Shu t_questLog4
+    @print author:Shu {t_questLog4}
 
 @elseif questState==5
     @char She.default pos:90,0 scale:1,1

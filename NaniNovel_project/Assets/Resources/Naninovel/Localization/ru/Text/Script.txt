@@ -1,0 +1,8 @@
+; English <en> to Russian <ru> localization document for `Script` managed text document
+
+t_questLog1: Найти Шу
+t_questLog2: Решить, кому отдать книгу
+t_questLog3: Играть в игру на карте Город.
+t_questLog4: Взять книгу на пустыре.
+t_questLog5: Вернуться к Хи в гараже.
+t_questLog6: Вернуться в город к Шу.

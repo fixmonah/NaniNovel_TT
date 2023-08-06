@@ -1,0 +1,8 @@
+; English <en> to Russian <ru> localization document for `CustomUI` managed text document
+
+t_location1Name: Гараж
+t_location2Name: Город
+t_location3Name: Пустырь
+t_mapButtonText: Карта
+t_playMiniGameButtonText: Играть в игру
+t_returnFromMiniGameButtonText: Вернуться в новеллу

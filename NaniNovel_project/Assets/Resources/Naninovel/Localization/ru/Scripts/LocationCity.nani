@@ -28,9 +28,6 @@
 ;     @print author:Shu "Go to the map and choose a wasteland."
 @print author:Shu "Перейди на карту и выбери Пустырь"
 
-# 4908ecdb
-;     @print author:Shu t_questLog4
-
 # bc49041b
 ;     @print author:{userName} "Shu is not here. She's probably with Hi."
 @print author:{userName} "Шу здесь нет. Возможна она с Хи."
