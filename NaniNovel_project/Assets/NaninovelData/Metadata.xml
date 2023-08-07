@@ -365,6 +365,18 @@
         &lt;Type&gt;Characters/Shu&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
+        &lt;Path&gt;CityMusic&lt;/Path&gt;
+        &lt;Type&gt;Audio&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;WastelandMusic&lt;/Path&gt;
+        &lt;Type&gt;Audio&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;GarageMusic&lt;/Path&gt;
+        &lt;Type&gt;Audio&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
         &lt;Path&gt;Start&lt;/Path&gt;
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
