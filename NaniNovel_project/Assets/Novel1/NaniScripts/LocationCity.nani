@@ -1,6 +1,4 @@
 @back city
-@stopBgm
-@bgm CityMusic
 @showUI QuestLog,MapButton
 @if questState==1
     @char She.default pos:90,0 scale:1,1
